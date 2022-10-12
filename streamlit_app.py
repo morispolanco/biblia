@@ -1,13 +1,11 @@
 from email.policy import default
 from multiprocessing.connection import answer_challenge
 import os
-import openai
+import gpt-j
 import streamlit as st
 from streamlit_chat import message
 from Bot import mises, session_prompt
 from Sentiment import sentiment
-
-openai.api_key = os.getenv('OPENAI_API_KEY')
 
 
 start_sequence = "\nIFYL:"
